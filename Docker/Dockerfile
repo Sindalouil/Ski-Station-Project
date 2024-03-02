@@ -1,9 +1,9 @@
 
-FROM adoptopenjdk/openjdk17:alpine
+FROM openjdk:17
 
 WORKDIR /usr/src/app
 
-COPY ./SkiStationProject-0.0.1-SNAPSHOT.jar /usr/src/app/SkiStationProject-0.0.1-SNAPSHOT.jar
+COPY ../target/SkiStationProject-0.0.1-SNAPSHOT.jar /usr/src/app/SkiStationProject-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 
