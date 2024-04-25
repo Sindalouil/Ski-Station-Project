@@ -10,4 +10,8 @@ scrape_configs:
   - job_name: 'node-exporter'
     static_configs:
       - targets: ['node-exporter:9100']
-
+  - job_name: 'jenkins'
+    static_configs:
+      - targets: ['172.22.100.221:8080']
+    metrics_path: '/prometheus' 
+    scheme: 'http' 
