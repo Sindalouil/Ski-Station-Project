@@ -2,27 +2,9 @@ version: '3.8'
 
 services:
 
-  mysql:
-    image: mysql:latest
-    container_name: mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: ski_station_db
-      MYSQL_USER: mysql_user
-      MYSQL_PASSWORD: root
-    ports:
-      - "3306:3306"
-    volumes:
-      - mysql_data:/var/lib/mysql
-
   ski_station:
     image: docker.io/sindalouil/ski-project:latest
     container_name: ski_station
     restart: always
     ports:
       - "8083:8080"
-
-volumes:
-  mysql_data:
-  nexus_data:
