@@ -3,6 +3,7 @@ FROM openjdk:17
 
 WORKDIR /usr/src/app
 
+
 COPY target/SkiStationProject-0.0.1-SNAPSHOT.jar /usr/src/app/SkiStationProject-0.0.1-SNAPSHOT.jar
 
 
